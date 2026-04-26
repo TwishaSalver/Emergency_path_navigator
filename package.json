@@ -1,0 +1,17 @@
+{
+  "name": "election-navigator",
+  "version": "1.0.0",
+  "description": "Emergency Response Dispatch & Tracking System",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm start\"",
+    "build": "cd frontend && npm run build && cd ../backend && npm install",
+    "start": "cd backend && npm start",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "setup": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
